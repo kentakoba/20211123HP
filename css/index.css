@@ -1,0 +1,493 @@
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.logo{
+  width: 40%;  
+}
+
+.head-list{
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .head-list{
+  display: none;
+}
+}
+
+
+.head-list-child{
+  margin-left: 10px;
+  color:black;
+}
+
+a {
+    text-decoration:none; 
+}
+/* ハンバーガ */
+
+.menu {
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+}
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu__line--top {
+  top: 0;
+}
+.menu__line--middle {
+  top: 14px;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+
+.drawer-nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+}
+
+/*ファーストビューー－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.firstview{
+  display: flex;
+  align-items: center;
+ height: 80vh;
+ color: white;
+ background: url(../img/mv.png) center / cover;
+
+}
+
+.firstview_oya {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.firstview_img{
+  width: 100%;
+}
+
+.firstview_moji1{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+}
+.firstview_moji2{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*TECHの思いー－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.think{
+  background-color: black;
+  padding: 60px 0;
+  color: white;
+}
+
+.think_wrap{
+  width: 85%;
+  margin: 0 auto;
+}
+.think_moji1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.think_moji2{
+  font-size: 15px;
+  margin-top: 30px;
+  line-height: 30px;
+
+}
+
+/*サービスー－ー－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.service{
+  background-color: white;
+  padding: 60px 0;
+}
+.service_oyaoya{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.service_oya{
+  width: 50%;
+  /* margin: 0 auto; */
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.service_oya2{
+  /* margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .service_oya2{
+  display: block;
+}
+}
+.service_child1{
+  width: 48%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .service_child1{
+  width: 100%;
+}
+}
+
+.service_child2{
+  width: 48%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .service_child2{
+  width: 100%;
+}
+}
+.service_child3{
+  width: 48%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .service_child3{
+  width: 100%;
+}
+}
+.service_child4{
+  width: 48%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .service_child4{
+  width: 100%;
+}
+}
+.service_child_moji1{
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.service_child_moji2{
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.service_child_img{
+  width: 100%;
+}
+.service_oya3{
+  display: block;
+  width: 300px ;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #cd0224;
+  color: #fff;
+  height: 15px;
+  margin-top: 20px;
+}
+
+/*ニュースー－ー－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.news{
+  background-color: black;
+  padding: 80px 0;
+}
+
+.news_oyaoya{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.news_oya1{
+  display: flex;
+  justify-content: space-between;
+}
+.news_oya1_moji{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.news_oya1_btn{
+  width: 160px;
+  font-size: 14px;
+  padding: 7px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+}
+.news_oya2{
+  margin-top: 20px;
+}
+.news_oya2_child{
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+
+}
+
+/*社員ブログー－ー－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.blog{
+  background-color: white;
+  padding: 80px 0;
+}
+.blog_child{
+  width: 85%;
+  margin: 0 auto;  
+}
+.blog_grachild_title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.blog_grachild_card_parent{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .blog_grachild_card_parent{
+  display: block;
+}
+}
+
+.blog_grachild_card_child_left{
+  width: 32%;
+  margin-right:2%;
+}
+
+@media screen and (max-width: 768px) {
+.blog_grachild_card_child_left{
+  width: 100%;
+}
+}
+
+.blog_grachild_card_child_center{
+  width: 32%;
+  margin-right:2%;
+}
+
+@media screen and (max-width: 768px) {
+.blog_grachild_card_child_center{
+  width: 100%;
+}
+}
+
+.blog_grachild_card_child_right{
+  width: 32%;
+}
+
+@media screen and (max-width: 768px) {
+.blog_grachild_card_child_right{
+  width: 100%;
+}
+}
+
+.blog_grachild_card_child_img{
+  width: 100%;
+}
+
+.blog_grachild_card_child_day{
+  margin-top: 10px;
+}
+.blog_grachild_card_child_title{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+.blog_grachild_btn{
+  margin: 60px 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.blog_grachild_btn_child{
+  font-weight: bold;
+  padding: 10px 50px;
+  background-color: #cd0224;
+  color: #fff;
+}
+
+/*会社概要採用情報－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+
+.gaiyo-saiyo{
+  padding-bottom: 50px;
+}
+.gaiyo-saiyo_parent{
+  display: flex;
+  justify-content: space-between;
+}
+.gaiyo-saiyo_child1{
+  background-color: red;
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+  font-size: 20px;
+}
+.gaiyo-saiyo_child2{
+  background-color: black;
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+  font-size: 20px;
+}
+
+
+/*お問い合わせ－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.question{
+  padding: 80px 0;
+  background-color: rgb(212, 212, 212);
+}
+.question_child{
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+
+}
+.question_grachild1{
+  font-weight: bold;
+  font-size: 25px;
+}
+.question_grachild2{
+  margin-top: 40px;
+}
+.question_grachild_btn{
+  margin-top: 70px;
+  text-align: center;
+  display: block;
+}
+.question_grachild_btn_moji{
+  background-color: #cd0224;
+  color: white;
+  padding: 10px 70px;
+}
+/*フッター－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－*/
+.bottom{
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+}
+.bottom_child{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  width: 85%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .bottom_child{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+  } 
+}
+
+.bottom_child_list_oya{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .bottom_child_list_oya{
+    display: block;
+}
+}
+
+.bottom_child_list_child{
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom_child_list_child{
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  } 
+}
+
+.bottom_child_list_child_last{
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom_child_list_child_last{
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+  } 
+}
+
+.bottom_child_list_child:after{
+  content: "|";
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom_child_list_child:after{
+    content:none;
+  }
+}
+
