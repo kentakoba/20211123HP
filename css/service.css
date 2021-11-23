@@ -1,0 +1,61 @@
+.servicepage_title{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;/*ショートハンド*/
+  color: white;
+}
+
+.servicepage_title_moji{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.servicepage_content{
+  padding: 100px 0;
+}
+.servicepage_content_child{
+  margin: 0 auto;
+  width: 85%;
+}
+.servicepage_content_child_line{
+  margin: 20px 0;
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
+.servicepage_content_child_oya{
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .servicepage_content_child_oya{
+  display: block;
+}
+}
+
+
+.servicepage_content_child_oya_left{
+  width: 350px;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .servicepage_content_child_oya_left{
+  width: 100%;
+  height: 100%;
+  margin-right: 0px;
+
+}
+}
+
+.servicepage_content_child_oya_right_moji1{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.servicepage_content_child_oya_right_moji2{
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 20px;
+}

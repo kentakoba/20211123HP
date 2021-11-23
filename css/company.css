@@ -1,0 +1,35 @@
+.companypage_title{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;/*ショートハンド*/
+  color: white;
+}
+
+.companypage_title_moji{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.company_content{
+  padding: 100px 0;
+}
+.company_content_oya{
+  margin: 0 auto;
+  width: 85%;
+}
+.company_content_oya_tbl{
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.company_content_oya_tbl_name{
+  font-weight: bold;
+  width: 30%;
+  padding: 20px 0;
+  border-top: 1px solid black;
+}
+.company_content_oya_tbl_date{
+  width: 70%;
+  border-top: 1px solid black;
+}

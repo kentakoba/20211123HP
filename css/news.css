@@ -1,0 +1,33 @@
+.newspage_title{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;/*ショートハンド*/
+  color: white;
+}
+
+.newspage_title_moji{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.news_content{
+  padding: 100px 0;
+}
+
+.news_content_oya{
+  margin: 0 auto;
+  width: 85%;
+}
+.news_content_box{
+  padding: 20px 10px;
+  border:solid 1px black;
+  margin-top: 10px;
+  color: black;
+  font-size: 14px;
+
+}
+.news_content_box_moji2{
+  font-weight: bold;
+}

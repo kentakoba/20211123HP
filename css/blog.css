@@ -1,0 +1,46 @@
+.blogpage_title{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;/*ショートハンド*/
+  color: white;
+}
+
+.blogpage_title_moji{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.blog_content{
+  padding: 100px 0;
+}
+.blog_content_oya{
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.blog_content_oya_child{
+width: 31%;
+margin-right: 2%;
+margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .blog_content_oya_child{
+  width: 100%;
+}
+}
+
+.blog_content_oya_child_img{
+  width: 100%;
+}
+.blog_content_oya_child_moji1{
+  margin-top: 10px;
+}
+.blog_content_oya_child_moji2{
+  font-weight: bold;
+  margin-top: 10px;
+}
