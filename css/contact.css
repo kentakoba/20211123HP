@@ -1,0 +1,54 @@
+.contactpage_title{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;/*ショートハンド*/
+  color: white;
+}
+
+.contactpage_title_moji{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact_content{
+  padding: 100px 0;
+}
+
+.contact_content_child{
+  margin: 0 auto;
+  width: 85%;
+}
+.contact_content_child_box{
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+.contact_content_child_titl_after{
+  margin-top: 30px;
+}
+.contact_content_child_titl_after::after{
+ content:"*";
+ color: red;
+}
+
+.contact_content_child_box2{
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+.contact_content_child_btn{
+  text-align: center;
+  /* margin-top: 50px; */
+  padding: 20px;
+  background-color: black;
+  color: white;
+  width: 30%;
+  margin: 50px auto;
+}
+/* .contact_content_child_box::after{
+ content: none;
+} */

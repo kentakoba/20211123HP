@@ -1,0 +1,53 @@
+.recruitpage_title{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/mv.png) center / cover;/*ショートハンド*/
+  color: white;
+}
+
+.recruitpage_title_moji{
+  font-size: 30px;
+  font-weight: bold;
+}
+.recruit_content{
+  padding: 100px 0;
+}
+
+.recruit_content_oya{
+  width: 85%;
+  margin: 0 auto;
+}
+.recruit_content_child{
+  margin-bottom: 50px;
+}
+.recruit_content_child_moji1{
+  font-size: 25px;
+  font-weight: bold;
+}
+.recruit_content_child_line{
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 10px;
+}
+.recruit_content_child_moji2{
+  margin-top: 20px;
+}
+.recruit_content_child_table{
+  width: 100%;
+  margin-top: 20px;
+
+}
+.recruit_content_child_table_name{
+  width: 30%;
+  padding: 30px 0;
+  background-color: rgb(238, 235, 235);
+  border: 1px solid gray;
+}
+.recruit_content_child_data{
+  width: 70%;
+  border: 1px solid gray;
+  padding: 0 0 0 20px;
+}
