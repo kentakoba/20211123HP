@@ -458,11 +458,13 @@ a{
 }
 @media screen and (max-width: 768px) {
   .bottom_child{
-    width: 85%;
-    display: block;
+    width: 60%;
+    /* display: block; */
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
+    display: flex;
+    align-items: center;
   } 
 }
 
