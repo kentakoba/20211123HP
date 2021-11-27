@@ -72,10 +72,9 @@ a{
   width: 36px;
   height: 32px;
   cursor: pointer;
-  position: relative;
-  right: -85%;
-  top: -40px;
-  z-index: 2;
+  position: fixed;
+  right:10px;
+  top: 20px;;
 }
 
 .menu__line--top,
@@ -90,6 +89,7 @@ a{
 }
 .menu__line--top {
   top: 0;
+  
 }
 .menu__line--middle {
   top: 14px;
